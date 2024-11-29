@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | FAQ accordion</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="faqs-wrapper">
+        <h1>FAQs</h1>
+        <div class="">
+          <div class="faq">
+            <div class="faq-header">
+              <div class="faq-title">
+                What is Frontend Mentor, and how will it help me?
+              </div>
+              <div class="state-icon"></div>
+            </div>
+            <div class="faq-desc">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skills with HTML, CSS and
+              JavaScript. It's suitable for all levels and ideal for portfolio
+              building.
+            </div>
+          </div>
+          <div class="faq">
+            <div class="faq-header">
+              <div class="faq-title">Is Frontend Mentor Free?</div>
+              <div class="state-icon"></div>
+            </div>
+            <div class="faq-desc">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skills with HTML, CSS and
+              JavaScript. It's suitable for all levels and ideal for portfolio
+              building.
+            </div>
+          </div>
+          <div class="faq">
+            <div class="faq-header">
+              <div class="faq-title">
+                Can I use Frontend Mentor projects in my portfolio?
+              </div>
+              <div class="state-icon"></div>
+            </div>
+            <div class="faq-desc">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skills with HTML, CSS and
+              JavaScript. It's suitable for all levels and ideal for portfolio
+              building.
+            </div>
+          </div>
+          <div class="faq">
+            <div class="faq-header">
+              <div class="faq-title">
+                How can I get help if I'm stuck on a challenge?
+              </div>
+              <div class="state-icon"></div>
+            </div>
+            <div class="faq-desc">
+              Frontend Mentor offers realistic coding challenges to help
+              developers improve their frontend coding skills with HTML, CSS and
+              JavaScript. It's suitable for all levels and ideal for portfolio
+              building.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">IKI</a>.
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      (function () {
+        $(".faq-header").on("click", function (e) {
+          $(e.target).parentsUntil(".faq").toggleClass("active");
+          $(e.target).parent().next().slideToggle();
+        });
+      })();
+    </script>
+  </body>
+</html>
